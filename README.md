@@ -21,11 +21,15 @@ Create the required certificates. Adapt ```nginx/server_cert.conf``` or ```.env`
 
 ```bash
 # run from the main directory
+# enter the same password, three times, first and second for key creation and
+# third to use the key for root certificate generation
 ./nginx/create_root_cert.sh
+# enter the same password in the signing process for the server certificate.
 ./nginx/create_server_cert.sh
 ```
 
-Import the rootCA.crt in your browser.
+Import the generated ```nginx/certs/rootCA.crt``` in your browser.
+
 ## Basic Auth (Optional)
 The default username and password for Basic Auth are:
 username: admin
