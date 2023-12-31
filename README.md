@@ -17,8 +17,7 @@ and prometheus should be mounted or certificates should be managed centrally.
 
 # Usage
 ## Certificates
-Create the required certificates.
-Adapt ```nginx/server_cert.conf or .env if required```
+Create the required certificates. Adapt ```nginx/server_cert.conf``` or ```.env``` if required
 
 ```bash
 # run from the main directory
